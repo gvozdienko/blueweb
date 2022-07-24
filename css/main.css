@@ -1884,6 +1884,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
   z-index: 997;
   border-bottom: 1px solid white;
+  background: linear-gradient(to left, #2193b0,#6dd5ed);
 }
 
 #header hr {
@@ -2045,9 +2046,14 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   color: #fff;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 18px;
   text-transform: uppercase;
   outline: none;
+
+}
+.nav-menu a:hover{
+ color: skyblue;
+
 }
 
 .nav-menu > li {
@@ -2226,12 +2232,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .primary-btn {
-  background-color: #88d200;
+
+  background-color: skyblue;
   line-height: 42px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
   border: none;
-  color: #fff;
+  color: black;
   display: inline-block;
   font-weight: 500;
   position: relative;
@@ -2243,6 +2250,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   cursor: pointer;
   text-transform: uppercase;
   position: relative;
+  border-radius: 25%;
+
 }
 
 .primary-btn:focus {
@@ -2262,9 +2271,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .primary-btn:hover {
-  color: #88d200;
+  color: skyblue;
   background-color: transparent;
-  border-color: #88d200;
+  border-color: skyblue;
 }
 
 .primary-btn.white {
@@ -2278,11 +2287,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .primary-btn.white:hover {
   background: #fff;
-  color: #88d200;
+  color:skyblue;
 }
 
 .primary-btn.white:hover span {
-  color: #88d200;
+  color: skyblue;
 }
 
 .overlay {
@@ -2676,7 +2685,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .copy-right-text i, .copy-right-text a {
-  color: #88d200;
+  color: skyblue;
 }
 
 .footer-social a {
@@ -2688,9 +2697,47 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .footer-social a:hover i {
-  color: #88d200;
+  color: skyblue;
 }
+.rounded {
+  counter-reset: li;
+  list-style: none;
+  font: 14px "Trebuchet MS", "Lucida Sans";
+  padding: 0;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+.rounded a {
+  position: relative;
+  display: block;
+  padding: .4em .4em .4em 2em;
+  margin: .5em 0;
+  background: #f9f9ff;
+  border: 0.1px solid lightgrey;
 
+  color: #444;
+  text-decoration: none;
+  border-radius: .3em;
+  transition: .3s ease-out;
+}
+.rounded a:hover {background: #E9E4E0;}
+.rounded a:hover:before {transform: rotate(360deg);}
+.rounded a:before {
+  content: counter(li);
+  counter-increment: li;
+  position: absolute;
+  left: -1.3em;
+  top: 50%;
+  margin-top: -1.3em;
+  background: skyblue;
+  height: 2em;
+  width: 2em;
+  line-height: 2em;
+  border: .3em solid white;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 2em;
+  transition: all .3s ease-out;
+}
 .footer-social i {
   color: #cccccc;
   -webkit-transition: all 0.3s ease 0s;
@@ -2746,7 +2793,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .single-footer-widget .click-btn {
-  background-color: #88d200;
+  background-color: skyblue;
   color: #fff;
   border-radius: 0;
   border-top-left-radius: 0px;
@@ -2893,11 +2940,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .about-content {
-  padding: 150px 0px;
+  padding: 100px 0px;
   text-align: center;
 }
 
 .about-content h1 {
+  padding: 0px 0;
   font-size: 48px;
   font-weight: 300;
 }
@@ -3092,8 +3140,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .contact-page-area .form-area .primary-btn:hover {
-  border: 1px solid #88d200;
-  color: #88d200 !important;
+  border: 1px solid skyblue;
+  color: skyblue !important;
 }
 
 @media (max-width: 960px) {
@@ -3115,7 +3163,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .contact-page-area .single-contact-address .lnr {
   font-size: 30px;
   font-weight: 500;
-  color: #88d200;
+  color: skyblue;
   margin-right: 30px;
 }
 
@@ -3158,7 +3206,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .single-post .tags li:hover a {
-  color: #88d200;
+  color: skyblue;
 }
 
 .single-post h1 {
@@ -3222,7 +3270,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .search-widget i {
-  color: #88d200;
+  color: skyblue;
 }
 
 .search-widget form.example {
@@ -3273,7 +3321,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .protfolio-widget ul li a i:hover {
-  color: #88d200;
+  color: skyblue;
 }
 
 .category-widget ul li {
